@@ -1,0 +1,39 @@
+GET http://localhost:3001/
+###
+GET http://localhost:3001/books/
+###
+GET http://localhost:3001/book/1
+###
+
+
+
+POST http://localhost:3001/books/
+Content-Type: application/json
+
+{
+  "sid": 8,
+  "sname": "yedukondalu",
+  "age": 20,
+  "email": "yedu@gmail.com",
+  "address": "kakinada",
+  "mno": 9855232325,
+  "grade": "b-grade"
+}
+
+
+###
+PUT http://localhost:3001/books/3
+Content-Type: application/json
+
+{
+  "sid": 10,
+  "sname": "SUNEEL",
+  "age": 20,
+  "email": "yedu@gmail.com",
+  "address": "kakinada",
+  "mno": 9855232325,
+  "grade": "b-grade"
+}
+
+###
+DELETE http://localhost:3001/books/1
